@@ -1,0 +1,133 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Ubuntu:wght@700&display=swap');
+body {
+  /* background: linear-gradient(90deg, rgb(44, 1, 42) 0%, rgb(13, 1, 29) 35%); */
+  background-repeat: no-repeat;
+  background-color: rgb(8, 8, 32);
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+}
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+button:hover {
+  opacity:1;
+}
+.login-form{
+  width: 450px;
+  height: 480px;
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px ;
+  box-shadow: 0px 0px 5px #cf57da;
+}
+input[type=text], input[type=password]{
+  width: 300px;
+  height: 50px;
+  border-bottom: 2px solid white;
+  background-color: black;
+  border: none;
+  margin: 10px;
+  font-family: 'Montserrat', sans-serif;
+  /* border-bottom: 1px solid #cf57da; */
+}
+input{
+  color: aliceblue;
+  font-size: large;
+}
+input[type=text]:hover, input[type=password]:hover{
+  border-bottom: 2px solid rgb(148, 86, 159);
+}
+
+input[type=text]:focus, input[type=password]:focus {
+
+color: #ffffff;
+background-color: #100f0f;
+border: 3px solid #cf57da;
+outline: 0;
+box-shadow: none;
+border-radius: 5px;
+box-shadow: 0px 0px 5px #cf57da;
+}
+button {
+  background-color: #621967;
+  color: white;
+  padding: 14px 20px;
+ margin-top: 50px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  height: 50px;
+  width: 200px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.first{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a{
+  color: #cf57da;
+}
+a:hover{
+  text-shadow: 0px 0px 5px #cf57da;
+}
+.cap{
+  color: #ffffff;
+  font-size: 23px;
+  text-shadow: 0px 0px 10px #cf57da;
+}
+h1{
+            background-image: linear-gradient(rgb(175, 113, 175),rgb(72, 18, 75)); 
+            background-repeat: repeat; 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            font-size: 100px; 
+            font-weight: bold; 
+            font-weight: 800; 
+            /* margin-top: -50px; */
+}
+.login{
+  width: 1550px;
+}
+    </style>
+</head>
+<body>
+  <div class="login">
+<div align="center">
+  <h1 align="center">
+    Login TouristaMate 
+  </h1>
+  <p class="cap">Embark on a journey with TouristaMate. Let's get started!</p>
+  </div>
+
+
+  <form action="/loginsubmit" method="GET">
+    <div class="login-form" >
+      <div class="first">
+      <p><i class="fa-solid fa-envelope"></i></p> <input type="text" placeholder="Enter Email" name="emil"/><br></div>
+      <div class="first">
+              <p><i class="fa-solid fa-lock"></i></p> <input type="password" placeholder="Enter Password" name="passwrd"/></div>
+      <button class="login-button">Login</button>
+      <br>
+      
+      <p>Don't Have an account??<a href="http://localhost:4000/signup" class="sign-up">Sign Up!</a></p>
+      <br>
+
+    </div
+  </form>
+</div>
+</body>
+</html>
