@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Ubuntu:wght@700&display=swap');
+        body{
+            /* background: rgb(2,0,36); */
+            /* background: linear-gradient(90deg, rgb(44, 1, 42) 0%, rgb(13, 1, 29) 35%); */
+  background-color: rgb(8, 8, 32);
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Montserrat', sans-serif;
+             color: aliceblue;
+        }
+        .main{
+            width: 1550px;
+        }
+         h1 { 
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvx7xdEr84qBkuAXMkg2e92RTLudKdhBBxeVp92o6icg4eO1ro-LRSFGre78yRYV_Y9aI&usqp=CAU'); 
+            background-repeat: repeat; 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            font-size: 150px; 
+            text-align: center; 
+            font-weight: bold; 
+            font-weight: 800; 
+            margin-top: 100px;
+        }
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            width: 1540px;
+            height: 70px;
+            
+        }
+        .navlist{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 500px;
+            margin-left: 300px;
+            justify-content: space-between;
+        }
+        .navlist li{
+            list-style-type: none;
+            border: 1px solid white;
+            padding:10px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            border-top-left-radius: 25px;
+            text-shadow: 2px 2px 2px#0e0e0e;
+
+        }
+        .navlist li a{
+            text-decoration: none;
+            color: white;
+        }
+        .wel{
+            font-size: 40px;
+            margin-top: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="navbar">
+        <ul class="navlist">
+            <li><a href="#">Home</a></li>
+            <li><a href="https://www.tourmyindia.com/">Places</a></li>
+            <li><a href="https://stripe-phantom-shamrock.glitch.me/">Translator</a></li>
+            <li><a href="https://watery-hail-strand.glitch.me/">Weather</a></li>
+            <li><a href="https://detailed-somber-almond.glitch.me/">About Us</a></li>
+        </ul>
+    </div>
+    <div align="center">
+        <p class="wel">Welcome <%=name%></p>
+        <h1>TouristaMate</h1>
+
+    </div>
+    
+</div>
+</body>
+</html>
